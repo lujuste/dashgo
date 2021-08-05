@@ -4,7 +4,7 @@ export function Logo() {
     return (
         <Text
             fontSize={["2xl", "3xl"]}
-            font-weight="bold"
+            fontWeight="bold"
             letterSpacing="tight"
             w="64"
         >
