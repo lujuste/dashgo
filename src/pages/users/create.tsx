@@ -1,10 +1,11 @@
-import { Box, Flex, Heading, Divider, VStack, SimpleGrid, Input, HStack, Button, FormControl, FormErrorMessage } from '@chakra-ui/react'
+import { Box, Flex, Heading, Divider, VStack, SimpleGrid, HStack, Button, FormControl } from '@chakra-ui/react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import * as yup from 'yup'
 import { Header } from '../../components/Header'
 import { Sidebar } from '../../components/Sidebar'
 import Link from 'next/link'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { Input } from '../../components/Form/Input'
 
 
 
@@ -114,11 +115,6 @@ export default function CreateUser() {
                                 >
                                     Salvar
                                 </Button>
-                                {!!errors && (
-                                    <FormErrorMessage>
-                                        {errors.message}
-                                    </FormErrorMessage>
-                                )}
                             </HStack>
                         </Flex>
 
